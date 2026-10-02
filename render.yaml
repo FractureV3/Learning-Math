@@ -3,10 +3,10 @@ services:
     name: learn-math
     runtime: node
     plan: free
+    repo: https://github.com/FractureV3/Learning-Math
     branch: main
     buildCommand: npm install
     startCommand: npm start
-    autoDeploy: true
     envVars:
       - key: NODE_VERSION
         value: 20
