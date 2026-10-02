@@ -1,6 +1,9 @@
 services:
   - type: web
     name: learn-math
-    env: node
+    runtime: node
     plan: free
-    startCommand: npm install && npm start
+    repo: https://github.com/FractureV3/Learning-Math
+    branch: main
+    buildCommand: npm install
+    startCommand: npm start
