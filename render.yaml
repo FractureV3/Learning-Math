@@ -1,6 +1,7 @@
- services:
+services:
   - type: web
     name: learn-math
-    env: node
+    runtime: node
     plan: free
-    startCommand: npm install && npm start
+    buildCommand: npm install
+    startCommand: npm start
