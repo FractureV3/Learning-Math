@@ -1,6 +1,6 @@
 services:
   - type: web
     name: learn-math
-    runtime: static
-    buildCommand: echo "no build"
-    staticPublishPath: .
+    env: node
+    plan: free
+    startCommand: npm install && npm start
